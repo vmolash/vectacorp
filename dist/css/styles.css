@@ -341,7 +341,7 @@ h6 {
   width: 80%;
   margin: 0 auto; }
 
-.btn-default, .btn-hot, .btn-cool {
+.btn-default, .btn-hot, .btn-cool, .btn-purple {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -358,10 +358,13 @@ h6 {
   background-color: #022933; }
 
 .btn-hot {
-  background-color: #0076a3; }
+  background-color: #d14348; }
 
 .btn-cool {
-  background-color: #d14348; }
+  background-color: #0076a3; }
+
+.btn-purple {
+  background-color: #6d73c2; }
 
 .grid {
   margin-bottom: 15px; }

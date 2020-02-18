@@ -1,7 +1,7 @@
 $color-btn-text: $darkblue;
-$color-btn-default: $text-color;
-$color-btn-hot: $red;
-$color-btn-cool: $blue;
+// $color-btn-default: $text-color;
+// $color-btn-hot: $red;
+// $color-btn-cool: $blue;
 $roundness: 20px 0 20px 0;
 
 %btn {
@@ -17,16 +17,35 @@ $roundness: 20px 0 20px 0;
     user-select: none;
     color: $background;
 }
-$color-btn-names: 'default', 'hot', 'cool';
-$color-btn-values: $text-color, $blue, $red;
-
-@each $name in $color-btn-names {
-    $i: index($color-btn-names, $name);
+// 3rd method
+$color-btns: (
+    default: $text-color,
+    hot: $red,
+    cool: $blue,
+    purple: $purple
+);
+@each $name, $value in $color-btns {
     .btn-#{$name} {
         @extend %btn;
-        background-color: nth($color-btn-values, $i);
+        background-color: $value;
     }
 }
+
+
+// 2nd method
+// $color-btn-names: 'default', 'hot', 'cool';
+// $color-btn-values: $text-color, $red, $blue;
+
+// @each $name in $color-btn-names {
+//     $i: index($color-btn-names, $name);
+//     .btn-#{$name} {
+//         @extend %btn;
+//         background-color: nth($color-btn-values, $i);
+//     }
+// }
+
+
+// 1st method
 
 // .btn-default { 
 //     @extend %btn;
