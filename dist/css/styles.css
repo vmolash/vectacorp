@@ -518,3 +518,6 @@ footer nav {
   margin-top: 20px;
   min-height: 200px;
   background-color: #003f57; }
+  @media (min-width: 0) and (max-width: 500px) {
+    footer nav {
+      display: none; } }
