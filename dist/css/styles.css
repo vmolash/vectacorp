@@ -318,7 +318,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #d14348;
-  font-family: "Oswald"; }
+  font-family: Oswald, helvetica, sans-serif; }
 
 .container {
   width: 80%;
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  font-family: "Oswald";
+  font-family: Oswald, helvetica, sans-serif;
   user-select: none;
   color: #EEE8D6; }
 
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-right: 0; }
   .grid img {
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 100%;
     height: auto; }
 
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 20px; }
     .background .container h1 {
       color: #d8c241;
-      font-family: "Oswald";
+      font-family: Oswald, helvetica, sans-serif;
       font-size: 5rem;
       line-height: 105%;
       margin-bottom: 0;
