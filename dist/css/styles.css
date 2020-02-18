@@ -317,8 +317,25 @@ body {
   background-color: #EEE8D6; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #d14348;
   font-family: Oswald, helvetica, sans-serif; }
+
+h1 {
+  color: #0076a3; }
+
+h2 {
+  color: #6d73c2; }
+
+h3 {
+  color: #548c27; }
+
+h4 {
+  color: #d14348; }
+
+h5 {
+  color: #f39856; }
+
+h6 {
+  color: #ffba00; }
 
 .container {
   width: 80%;
@@ -378,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: bottom;
     padding-bottom: 20px; }
     .background .container h1 {
-      color: #d8c241;
+      color: #ffba00;
       font-family: Oswald, helvetica, sans-serif;
       font-size: 5rem;
       line-height: 105%;
@@ -413,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 10px;
     padding-bottom: 10px; }
     .media .item:hover {
-      background: #d8c241; }
+      background: #ffba00; }
     .media .item:last-of-type {
       border-bottom: 1px dotted #d14348; }
     .media .item:before, .media .item:after {
@@ -450,9 +467,9 @@ h1, h2, h3, h4, h5, h6 {
   .table > thead > tr:hover, .table > tbody > tr:hover, .table > tfoot > tr:hover {
     background-color: #dfc5b2; }
   .table > thead > tr:nth-child(even), .table > tbody > tr:nth-child(even), .table > tfoot > tr:nth-child(even) {
-    background-color: rgba(216, 194, 65, 0.3); }
+    background-color: rgba(255, 186, 0, 0.3); }
     .table > thead > tr:nth-child(even):hover, .table > tbody > tr:nth-child(even):hover, .table > tfoot > tr:nth-child(even):hover {
-      background-color: rgba(216, 194, 65, 0.6); }
+      background-color: rgba(255, 186, 0, 0.6); }
   .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
     padding: 10px;
     border-bottom: 1px dotted #0076a3; }
@@ -484,7 +501,7 @@ nav .branding h1 {
   font-size: 2.75rem;
   overflow: hidden;
   margin: 0;
-  color: #d8c241; }
+  color: #ffba00; }
 
 nav ul {
   list-style-type: none;
@@ -508,7 +525,7 @@ nav ul li a {
   padding: 10px 5px;
   color: #EEE8D6; }
   nav ul li a:hover {
-    color: #d8c241; }
+    color: #ffba00; }
   header nav ul li a:hover {
     background-color: #002c3d; }
   footer nav ul li a {
