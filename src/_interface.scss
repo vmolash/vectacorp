@@ -1,7 +1,9 @@
 $color-btn-text: $darkblue;
-$color-btn-default: $text-color;
-$color-btn-hot: $red;
-$color-btn-cool: $blue;
+// for 3rd method commented below
+// $color-btn-default: $text-color;
+// $color-btn-hot: $red;
+// $color-btn-cool: $blue;
+$roundness: 20px 0 20px 0;
 
 %btn {
     display: inline-block;
@@ -16,17 +18,59 @@ $color-btn-cool: $blue;
     user-select: none;
     color: $background;
 }
+// 3rd method
+$color-btns: (
+    default: $text-color,
+    hot: $red,
+    cool: $blue,
+    purple: $purple
+);
+@each $name, $value in $color-btns {
+    .btn-#{$name} {
+        @extend %btn;
+        background-color: $value;
+    }
+}
 
-.btn-default { 
-    @extend %btn;
-    background: $color-btn-default;
-}
-.btn-hot { 
-    @extend %btn;
-    background: $color-btn-hot;
-}
-.btn-cool { 
-    @extend %btn;
-    background: $color-btn-cool;
-}
 
+// 2nd method
+// $color-btn-names: 'default', 'hot', 'cool';
+// $color-btn-values: $text-color, $red, $blue;
+
+// @each $name in $color-btn-names {
+//     $i: index($color-btn-names, $name);
+//     .btn-#{$name} {
+//         @extend %btn;
+//         background-color: nth($color-btn-values, $i);
+//     }
+// }
+
+
+// 1st method
+
+// .btn-default { 
+//     @extend %btn;
+//     background: $color-btn-default;
+// }
+// .btn-hot { 
+//     @extend %btn;
+//     background: $color-btn-hot;
+// }
+// .btn-cool { 
+//     @extend %btn;
+//     background: $color-btn-cool;
+// }
+.grid {
+    margin-bottom: 15px;
+    @include clearfix;
+    .item {
+        float: left;
+        @include imageGrid(3, 2%);
+    }
+    img {
+        display: block;
+        border-radius: nth($roundness,1);
+        max-width: 100%;
+        height: auto;
+    }
+}

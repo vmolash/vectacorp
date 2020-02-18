@@ -9,10 +9,17 @@ body {
     color: $text-color;
     background-color: $background;
 }
+
+$heading-colors: $blue, $purple, $green, $red, $orange, $yellow;
 h1, h2, h3, h4, h5, h6 {
-    color: $red;
     font-family: $font-headings;
 }
+@for $item from 1 through length($heading-colors) {
+    h#{$item} {
+        color: nth($heading-colors, $item);
+    }
+}
+
 .container {
     width: 80%;
     margin: 0 auto;

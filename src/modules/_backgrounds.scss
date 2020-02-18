@@ -25,6 +25,7 @@
     }
 }
 .jumbotron {
+    margin-top: 0;
     @include backImage('../images/pier.jpg');
 }
 .bridge {
