@@ -28,3 +28,8 @@
         margin-right: 0;
     }
 }
+@mixin break($length) {
+    @media (min-width: $length) {
+        @content;
+    }
+}
