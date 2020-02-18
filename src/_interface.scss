@@ -17,19 +17,29 @@ $roundness: 20px 0 20px 0;
     user-select: none;
     color: $background;
 }
+$color-btn-names: 'default', 'hot', 'cool';
+$color-btn-values: $text-color, $blue, $red;
 
-.btn-default { 
-    @extend %btn;
-    background: $color-btn-default;
+@each $name in $color-btn-names {
+    $i: index($color-btn-names, $name);
+    .btn-#{$name} {
+        @extend %btn;
+        background-color: nth($color-btn-values, $i);
+    }
 }
-.btn-hot { 
-    @extend %btn;
-    background: $color-btn-hot;
-}
-.btn-cool { 
-    @extend %btn;
-    background: $color-btn-cool;
-}
+
+// .btn-default { 
+//     @extend %btn;
+//     background: $color-btn-default;
+// }
+// .btn-hot { 
+//     @extend %btn;
+//     background: $color-btn-hot;
+// }
+// .btn-cool { 
+//     @extend %btn;
+//     background: $color-btn-cool;
+// }
 .grid {
     margin-bottom: 15px;
     @include clearfix;

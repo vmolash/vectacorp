@@ -355,13 +355,13 @@ h6 {
   color: #EEE8D6; }
 
 .btn-default {
-  background: #022933; }
+  background-color: #022933; }
 
 .btn-hot {
-  background: #d14348; }
+  background-color: #0076a3; }
 
 .btn-cool {
-  background: #0076a3; }
+  background-color: #d14348; }
 
 .grid {
   margin-bottom: 15px; }
