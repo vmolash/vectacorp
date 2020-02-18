@@ -436,3 +436,29 @@ h1, h2, h3, h4, h5, h6 {
   .media a {
     text-decoration: none;
     color: #022933; }
+
+.table {
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%; }
+  .table caption {
+    font-size: 2.5rem;
+    text-align: left;
+    padding-bottom: 5px; }
+  .table > thead > tr:hover, .table > tbody > tr:hover, .table > tfoot > tr:hover {
+    background-color: #dfc5b2; }
+  .table > thead > tr:nth-child(even), .table > tbody > tr:nth-child(even), .table > tfoot > tr:nth-child(even) {
+    background-color: rgba(216, 194, 65, 0.3); }
+    .table > thead > tr:nth-child(even):hover, .table > tbody > tr:nth-child(even):hover, .table > tfoot > tr:nth-child(even):hover {
+      background-color: rgba(216, 194, 65, 0.6); }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 10px;
+    border-bottom: 1px dotted #0076a3; }
+  .table > thead, .table > tr {
+    background-color: #0076a3;
+    color: #EEE8D6; }
+    .table > thead:hover, .table > tr:hover {
+      background-color: #a32d00; }
+    .table > thead > th, .table > thead > td, .table > tr > th, .table > tr > td {
+      border-bottom: 0; }
